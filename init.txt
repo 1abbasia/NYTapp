@@ -1,0 +1,24 @@
+NY Times Top Storeis renderer app.
+
+Must have:
+  -A list article
+  -Detailed View of eah article
+  -List of articles is clickable and link takes you to the detailed article view 
+
+
+HIgh level:
+
+1. Create React app, dont think you will need express yet?
+2. create a hompage component that that makes an API call to Top Stories API
+
+3. Will need to use axios to make the call
+    HomePage.js Component:
+        -use useState to control state of page, const [articles,setArticles] = useStae([])
+        -use axios to make GET request to API, then the response you will set using setArtciles()
+        -This component will return a div that can then have an articles.map() function that spits ou each article in its own div
+
+4. Create a detailedPage component that takes in the article object as prop and renders full article detail on page. Use ReactRouter? to     handle navigation between
+    ArticlePage.js component:
+      takes in props (article object), returns title, byline, abstract, and article body
+
+5. The sort functionality: Can use react state to keep track of user inputs, or use Lodash?
