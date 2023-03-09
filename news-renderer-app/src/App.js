@@ -5,7 +5,6 @@ import HomePage from './HomePage';
 function App() {
   return (
     <div>
-   <h1>NY times Top Stories</h1>
    <HomePage />
    </div>
   );
