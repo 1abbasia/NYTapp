@@ -22,13 +22,19 @@ function HomePage() {
   }, []);
 
   return (
-    <div>
+    <div className='container'>
+      <div className='header'>
+        <h1>NY Times Top Stories</h1>
+      </div>
+      <div className='article-list'>
       {articles.map(article => (  //Loop over the articles object to get the divs that make up requested infromation
-        <div key={article.url}>
+        <div className='article' key={article.url}>
           <h3>{article.title}</h3>
           <p>{article.abstract}</p>
         </div>
       ))}
+      </div>
+      
     </div>
   );
 }
